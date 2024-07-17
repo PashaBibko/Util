@@ -13,13 +13,13 @@
 #include <unordered_map>
 
 template <typename IDENTIFIER, typename VALUE>
-bool inMap(const std::unordered_map<IDENTIFIER, VALUE>& map, const IDENTIFIER& key)
+inline bool inMap(const std::unordered_map<IDENTIFIER, VALUE>& map, const IDENTIFIER& key)
 {
     return map.find(key) != map.end();
 }
 
 template <typename IDENTIFIER, typename VALUE, typename FUNCTION>
-void callFuncOnMap(const std::unordered_map<IDENTIFIER, VALUE>& map, const FUNCTION& func)
+inline void callFuncOnMap(const std::unordered_map<IDENTIFIER, VALUE>& map, const FUNCTION& func)
 {
     for ([IDENTIFIER, VALUE] pair : map)
     {
@@ -41,13 +41,13 @@ void callFuncOnMap(const std::unordered_map<IDENTIFIER, VALUE>& map, const FUNCT
 #include <map>
 
 template <typename IDENTIFIER, typename VALUE>
-bool inMap(const std::map<IDENTIFIER, VALUE>& map, const IDENTIFIER& key)
+inline bool inMap(const std::map<IDENTIFIER, VALUE>& map, const IDENTIFIER& key)
 {
     return map.find(key) != map.end();
 }
 
 template <typename IDENTIFIER, typename VALUE, typename FUNCTION>
-void callFuncOnMap(const std::map<IDENTIFIER, VALUE>& map, const FUNCTION& func)
+inline void callFuncOnMap(const std::map<IDENTIFIER, VALUE>& map, const FUNCTION& func)
 {
     for ([IDENTIFIER, VALUE] pair : map)
     {
