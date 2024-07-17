@@ -27,4 +27,4 @@ Below is the list of files and thier contents
 > Contains useful functions for easier map use
 > All functions are inline to get rid of any overhead
 > If you only use one of std::map and std::unordered_map you can change which ones will be compiled
-> Do this by defining the macro: DONT_MAP_MANIP<map type in capitals> to true
+> Do this by defining the macro: DONT_MAP_MANIP(map type in capitals) to true
